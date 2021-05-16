@@ -1,0 +1,19 @@
+.top-banner {
+    height: 606px;
+    width: 100%;
+    position: relative;
+    .top-banner-text {
+        height: 100%;
+        
+        z-index: 2;
+    }
+    .top-banner-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+}

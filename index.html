@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main</title>
+
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <a href="#">
+      <img src="image/Logo.png" alt="logo" class="header-logo" /></a>
+    <nav>
+      <div class="nav__trigger">
+        <div class="bars"></div>
+      </div>
+      <ul class="nav">
+        <li class="nav-item"><a href="#">About us</a></li>
+        <li class="nav-item"><a href="#">Services</a></li>
+        <li class="nav-item"><a href="#">Process</a></li>
+        <li class="nav-item"><a href="#">Our work</a></li>
+        <li class="nav-item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="main-section-wrapper">
+      <div class="main-text-wrapper">
+        <div class="text-wrap-1">
+          <div class="main-hover-text green">With more leads</div>
+          <div class="main-text">
+            <span>We're</span><img src="image/cross.svg" alt="cross" />
+          </div>
+        </div>
+        <div class="text-wrap-2">
+          <div class="main-hover-text green">With more sales</div>
+          <div class="main-text">
+            <span>Obsessed</span><img src="image/cross.svg" alt="cross" />
+          </div>
+        </div>
+        <div class="text-wrap-3">
+          <div class="main-hover-text green">
+            With making you rich. Like, order Hors d'oeuvre and dessert, rich.
+          </div>
+          <div class="main-text green">
+            <span>...</span><img src="image/cross.svg" alt="cross" />
+          </div>
+        </div>
+      </div>
+      <div class="main-bg-wrapper pinned-main-bg">
+        <img src="image/home-bg-main.png" alt="background" class="main" />
+        <img src="image/home-bg-cubes.png" alt="background" class="bg-1" />
+        <img src="image/Graphic_04-01.png" alt="background" class="bg-2" />
+        <img src="image/home-bg-planets.png" alt="background" class="bg-3" />
+      </div>
+      <div>
+        <div class="main-right-little-title">just scroll</div>
+        <div class="main-bottom-little-title green">
+          <a href="#">wanna chat?</a>
+        </div>
+        <div class="main-socials">
+          <a href="#"><svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.33076 3.32083H10.1566V0.140833C9.8416 0.0975 8.75826 0 7.4966 0C4.8641 0 3.06076 1.65583 3.06076 4.69917V7.5H0.155762V11.055H3.06076V20H6.62243V11.0558H9.40993L9.85243 7.50083H6.6216V5.05167C6.62243 4.02417 6.8991 3.32083 8.33076 3.32083Z"
+                fill="#ffffff" />
+            </svg>
+          </a>
+          <a href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.123 0.0637988C12.283 -0.0220346 7.72553 -0.0178679 5.88387 0.0637988C4.26553 0.139632 2.83803 0.530465 1.6872 1.6813C-0.0338905 3.40239 -0.0180143 5.65865 0.00435446 8.83762C0.00698296 9.21117 0.00970111 9.59747 0.00970111 9.99713C0.00970111 10.3712 0.00769769 10.7327 0.00576032 11.0823C-0.0124499 14.3681 -0.0248241 16.6009 1.6872 18.313C3.41145 20.0365 5.69258 20.0195 8.83564 19.9962C9.21223 19.9934 9.60118 19.9905 10.003 19.9905H10.0573C13.8689 19.9905 15.1928 19.9905 16.5489 19.4655C18.4014 18.7463 19.7997 17.0905 19.9364 14.1163C20.023 12.2755 20.018 7.7188 19.9364 5.87713C19.7714 2.3663 17.8872 0.237132 14.123 0.0637988ZM17.0355 17.0405C15.8744 18.2016 14.299 18.198 10.8964 18.1902L10.8946 18.1902C10.6031 18.1895 10.2981 18.1888 9.97887 18.1888L9.40652 18.1891C5.65581 18.1918 4.08395 18.1929 2.9222 17.028C1.71358 15.8251 1.73357 13.9949 1.76258 11.3388C1.76727 10.909 1.7722 10.4576 1.7722 9.9838C1.7722 9.58197 1.7686 9.18995 1.7651 8.80893C1.72852 4.8243 1.70299 2.04314 5.92053 1.82713L5.96836 1.82544C6.99223 1.78926 7.33526 1.77713 9.9672 1.77713L10.0047 1.80213C10.3852 1.80213 10.7587 1.79872 11.1237 1.79538L11.1237 1.79538C15.0186 1.75978 17.9476 1.733 18.1389 5.95713C18.1864 7.0113 18.1972 7.32797 18.1972 9.9963C18.1972 10.2362 18.1974 10.4679 18.1976 10.6917C18.201 14.309 18.2025 15.868 17.0355 17.0405ZM10.0031 4.86517C7.16725 4.86517 4.87142 7.16351 4.87142 9.99684C4.87142 12.8327 7.16975 15.1285 10.0031 15.1285C12.8389 15.1285 15.1348 12.8302 15.1348 9.99684C15.1348 7.16101 12.8364 4.86517 10.0031 4.86517ZM10.0031 13.3277C8.16225 13.3277 6.67225 11.8368 6.67225 9.99684C6.67225 8.15684 8.16309 6.66601 10.0031 6.66601C11.8431 6.66601 13.3339 8.15684 13.3339 9.99684C13.3348 11.8368 11.8439 13.3277 10.0031 13.3277ZM16.5373 4.66269C16.5373 5.32497 16.0004 5.86185 15.3381 5.86185C14.6758 5.86185 14.1389 5.32497 14.1389 4.66269C14.1389 4.00041 14.6758 3.46352 15.3381 3.46352C16.0004 3.46352 16.5373 4.00041 16.5373 4.66269Z"
+                fill="#ffffff" />
+            </svg></a>
+          <a href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 2.40167C0 1.07583 1.07583 0 2.40167 0C3.72667 0 4.8025 1.07583 4.80333 2.40167C4.80333 3.7275 3.7275 4.82583 2.40167 4.82583C1.07583 4.82583 0 3.7275 0 2.40167ZM19.9951 20V19.9992H20.0001V12.6642C20.0001 9.07582 19.2276 6.31165 15.0326 6.31165C13.0159 6.31165 11.6626 7.41831 11.1101 8.46748H11.0517V6.64665H7.07422V19.9992H11.2159V13.3875C11.2159 11.6467 11.5459 9.96332 13.7017 9.96332C15.8259 9.96332 15.8576 11.95 15.8576 13.4992V20H19.9951ZM0.329997 6.64746H4.47666V20H0.329997V6.64746Z"
+                fill="#ffffff" />
+            </svg></a>
+        </div>
+      </div>
+      <div class="green-circle pinned-green-ball"></div>
+    </section>
+    <section class="cards-section-wrapper">
+      <h3 class="secondary-title">How it's your turn are you:</h3>
+      <div class="card-more-link green"><a href="#">more</a></div>
+      <div class="flex-cards-section">
+        <div class="card-wrapper">
+          <a href="#"></a>
+          <h4>Hungry</h4>
+          <h5>
+            You have a successful business and know you need to get online,
+            but need the perfect team to do it.
+          </h5>
+          <div class="circle">
+            <div>Look no further</div>
+          </div>
+          <div class="card-image">
+            <img src="image/card-bg-dog.png" alt="dog" />
+          </div>
+          <div class="card-border"></div>
+        </div>
+        <div class="card-wrapper">
+          <a href="#"></a>
+          <h4>Hungry</h4>
+          <h5>
+            You have a successful business and know you need to get online,
+            but need the perfect team to do it.
+          </h5>
+          <div class="circle">
+            <div>Look no further</div>
+          </div>
+          <div class="card-image">
+            <img src="image/card-bg-dog.png" alt="dog" />
+          </div>
+          <div class="card-border"></div>
+        </div>
+        <div class="card-wrapper">
+          <a href="#"></a>
+          <h4>Hungry</h4>
+          <h5>
+            You have a successful business and know you need to get online,
+            but need the perfect team to do it.
+          </h5>
+          <div class="circle">
+            <div>Look no further</div>
+          </div>
+          <div class="card-image">
+            <img src="image/card-bg-dog.png" alt="dog" />
+          </div>
+          <div class="card-border"></div>
+        </div>
+        <div class="card-wrapper">
+          <a href="#"></a>
+          <h4>Hungry</h4>
+          <h5>
+            You have a successful business and know you need to get online,
+            but need the perfect team to do it.
+          </h5>
+          <div class="circle">
+            <div>Look no further</div>
+          </div>
+          <div class="card-image">
+            <img src="image/card-bg-dog.png" alt="dog" />
+          </div>
+          <div class="card-border"></div>
+        </div>
+      </div>
+    </section>
+    <section class="ball-section-wrapper">
+      <div class="ball-wrapper-absolute">
+        <div class="ball-flex-wrap">
+          <div class="ball-second-title ov-h">
+            <div id="small-text-ball-anim">Fret not.</div>
+          </div>
+          <div class="ball-white-circle">
+            <div class="circule-main-text">
+              With over a decade of experience in the industry, we’re the
+              right people to get the results you need.
+            </div>
+            <div class="ball-link"><a href="#">Some more about us</a></div>
+          </div>
+        </div>
+        <div class="ball-title ov-h">
+          <div id="main-title-ball">Pinky promise.</div>
+        </div>
+        <div class="small-ball-anim">
+          <div class="small-ball-wrapper">
+            <div class="small-ball-main">
+              <img src="image/small-ball-bg.png" alt="ball" class="small-ball-bg" />
+              <img src="image/G_01.png" alt="ball" class="small-ball-planet" />
+            </div>
+            <img src="image/red-circle.png" alt="red circle" class="small-ball-circle" />
+          </div>
+        </div>
+      </div>
+      <img src="image/big-ball.png" alt="ball" class="ball-image" />
+    </section>
+    <section class="types-section-wrapper">
+      <h3 class="secondary-title" id="types-main-title-anim">
+        Oh, so you want to know what we actually DO?
+      </h3>
+      <div class="types-flex-wrap">
+        <div class="type-card" id="branding">
+          <a href="#"></a>
+          <h4>Branding</h4>
+          <div class="types-animation">
+            <div class="branding-anim-ball"></div>
+            <div class="branding-anim-red-ball"></div>
+          </div>
+        </div>
+        <div class="type-card" id="web-dev-anim">
+          <a href="#"></a>
+          <h4>Web Development</h4>
+          <div class="types-animation web-green-block-anim">
+            <svg class="green-arrow-anim-web" width="26" height="40" viewBox="0 0 26 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.35816 0L0.641602 4.71672L15.9249 20L0.641602 35.2833L5.35816 40L25.3582 20L5.35816 0Z"
+                fill="#00DF8E" />
+            </svg>
+            <div class="web-green-block-anim-div"></div>
+          </div>
+        </div>
+        <div class="type-card" id="digital-anim">
+          <a href="#"></a>
+          <h4>Digital Marketing</h4>
+          <div class="types-animation digital-anim">
+            <img src="image/digital-bg.png" alt="background" class="digital-bg-anim" />
+            <img src="image/digital-man.png" alt="background" class="digital-man-anim" />
+            <img src="image/digital-planet.png" alt="background" class="digital-planet-anim" />
+            <div class="digital-cross">
+              <div class="cross-wrap">
+                <div class="digital-cross-top"></div>
+                <div class="digital-cross-bottom"></div>
+                <div class="digital-cross-left"></div>
+                <div class="digital-cross-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="type-card" id="marketing-anim">
+          <a href="#"></a>
+          <h4>Marketing Manager</h4>
+          <div class="types-animation marketing-anim">
+            <img src="image/types-marketing-bg.jpg" alt="background" />
+            <div class="marketing-top-block"></div>
+            <div class="marketing-bottom-block"></div>
+            <div class="marketing-sun-block"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="whyUs-section-wrapper">
+      <div class="whyUsTrigger"></div>
+      <div class="whyUsFixed">
+        <h3 class="why-title ov-h">
+          <div id="whyUs-title-anim">Ah, so you’re asking why us.</div>
+        </h3>
+        <div class="why-description">
+          Well, besides for clearly being able to read your mind, we’ve got
+          things things to offer you that you simply won’t find anywhere else.
+        </div>
+        <div class="book-flex-wrap">
+          <div class="main-wrap">
+            <img src="image/Rectangle 55.png" alt="background" class="book-image" id="book-1-img" />
+            <div class="book-number">01</div>
+            <div class="book-text" id="book-1-text">
+              <h4>We pull all-nighters</h4>
+              <div class="book-desc">
+                We don’t sleep so you can. When everyone else is watching
+                series, that’s when we’re researching, bettering, writing,
+                deleting, rewriting and designing to make your brand the best
+                one out there.
+              </div>
+              <div class="cross-wrap">
+                <a href="#"></a>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-wrap">
+            <img src="image/Rectangle 55.png" alt="background" class="book-image" id="book-2-img" />
+            <div class="book-number">02</div>
+            <div class="book-text" id="book-2-text">
+              <h4>We pull all-nighters</h4>
+              <div class="book-desc">
+                We don’t sleep so you can. When everyone else is watching
+                series, that’s when we’re researching, bettering, writing,
+                deleting, rewriting and designing to make your brand the best
+                one out there.
+              </div>
+              <div class="cross-wrap">
+                <a href="#"></a>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-wrap">
+            <img src="image/Rectangle 55.png" alt="background" class="book-image" id="book-3-img" />
+            <div class="book-number">03</div>
+            <div class="book-text" id="book-3-text">
+              <h4>We pull all-nighters</h4>
+              <div class="book-desc">
+                We don’t sleep so you can. When everyone else is watching
+                series, that’s when we’re researching, bettering, writing,
+                deleting, rewriting and designing to make your brand the best
+                one out there.
+              </div>
+              <div class="cross-wrap">
+                <a href="#"></a>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div class="main-wrap">
+            <img src="image/Rectangle 55.png" alt="background" class="book-image" id="book-4-img" />
+            <div class="book-number">04</div>
+            <div class="book-text" id="book-4-text">
+              <h4>We pull all-nighters</h4>
+              <div class="book-desc">
+                We don’t sleep so you can. When everyone else is watching
+                series, that’s when we’re researching, bettering, writing,
+                deleting, rewriting and designing to make your brand the best
+                one out there.
+              </div>
+              <div class="cross-wrap">
+                <a href="#"></a>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="image/why-bg.png" alt="bg" class="why-bg" />
+      </div>
+    </section>
+    <section class="converted-section-wrapper">
+      <h3>
+        We have converted 114 business using our heart, humour and hard-fought
+        expertise
+      </h3>
+      <h4>
+        Generating over £15,000,000 million through digital alone (thats a lot
+        of zeros) and it's because we know how to test, measure and prove
+        results. And we will do it for you too.
+      </h4>
+      <div class="images-flex-wrap">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="image/converted.png" alt="convert" />
+            </div>
+            <div class="swiper-slide">
+              <img src="image/converted.png" alt="convert" />
+            </div>
+            <div class="swiper-slide">
+              <img src="image/converted.png" alt="convert" />
+            </div>
+            <div class="swiper-slide">
+              <img src="image/converted.png" alt="convert" />
+            </div>
+            <div class="swiper-slide">
+              <img src="image/converted.png" alt="convert" />
+            </div>
+            <div class="swiper-slide">
+              <img src="image/converted.png" alt="convert" />
+            </div>
+            <div class="swiper-slide">
+              <img src="image/converted.png" alt="convert" />
+            </div>
+            <div class="swiper-slide">
+              <img src="image/converted.png" alt="convert" />
+            </div>
+            <div class="swiper-slide">
+              <img src="image/converted.png" alt="convert" />
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="expect-section-wrapper">
+      <div class="green-banner-flex-wrap">
+        <div class="banner-ball">
+          <a href="#"></a>
+          <div>Check out our process</div>
+        </div>
+        <div class="banner-text-wrapper">
+          <h3 class="ov-h">
+            <div id="green-banner-main-title">Here’s what to expect.</div>
+          </h3>
+          <h4>
+            <div id="green-banner-description">
+              Our 5 step process has been tweaked, tried, tested and improved
+              (man, we wish that word started with a T also) to perfection.
+            </div>
+          </h4>
+        </div>
+      </div>
+      <div class="red-banner">
+        <div class="red-square"></div>
+        <div class="flex-wrap">
+          <h4>
+            The bottom line is we love talking to serious business owners and
+            we love getting them serious results.
+          </h4>
+          <div class="red-ball">
+            <a href="#"></a>
+            <div>Get in touch</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="astr-bg-anim">
+      <img src="image/Graphic_04-01.png" alt="astr" class="pre-bg-contact" />
+    </div>
+    <section class="contact-section-wrapper">
+      <h2>Contact us</h2>
+      <h3 class="green">We're ready to answer all your questions.</h3>
+      <div class="flex-wrap">
+        <div class="circle">
+          <a href="#"></a>
+          <div>Give us a call</div>
+        </div>
+        <div class="contact-text-wrapper">
+          <h4>
+            Whether you have a question about our services, process, pricing,
+            branding or just want to find out the score from yesterday’s game
+          </h4>
+          <h5 class="green">(Contact details here)</h5>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <hr />
+    <div class="main-footer">
+      <img src="image/Logo.png" alt="logo" />
+      <div>
+        <p><a href="#">+44 (0) 161 394 0317</a></p>
+        <p><a href="#">info@discoverdesignstudio.com</a></p>
+        <p><a href="#">1 West Meade Manchester / United Kingdom</a></p>
+        <p><a href="#">Request a proposal</a></p>
+      </div>
+    </div>
+    <hr />
+    <div class="bottom-footer">
+      <div class="copyright">
+        2021 Discover Design Studio. All Right reserved.
+      </div>
+      <div class="footer-socials">
+        <div>
+          <a href="#"><svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.33076 3.32083H10.1566V0.140833C9.8416 0.0975 8.75826 0 7.4966 0C4.8641 0 3.06076 1.65583 3.06076 4.69917V7.5H0.155762V11.055H3.06076V20H6.62243V11.0558H9.40993L9.85243 7.50083H6.6216V5.05167C6.62243 4.02417 6.8991 3.32083 8.33076 3.32083Z"
+                fill="black" />
+            </svg></a>
+        </div>
+        <div>
+          <a href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.123 0.0637988C12.283 -0.0220346 7.72553 -0.0178679 5.88387 0.0637988C4.26553 0.139632 2.83803 0.530465 1.6872 1.6813C-0.0338905 3.40239 -0.0180143 5.65865 0.00435446 8.83762C0.00698296 9.21117 0.00970111 9.59747 0.00970111 9.99713C0.00970111 10.3712 0.00769769 10.7327 0.00576032 11.0823C-0.0124499 14.3681 -0.0248241 16.6009 1.6872 18.313C3.41145 20.0365 5.69258 20.0195 8.83564 19.9962C9.21223 19.9934 9.60118 19.9905 10.003 19.9905H10.0573C13.8689 19.9905 15.1928 19.9905 16.5489 19.4655C18.4014 18.7463 19.7997 17.0905 19.9364 14.1163C20.023 12.2755 20.018 7.7188 19.9364 5.87713C19.7714 2.3663 17.8872 0.237132 14.123 0.0637988ZM17.0355 17.0405C15.8744 18.2016 14.299 18.198 10.8964 18.1902L10.8946 18.1902C10.6031 18.1895 10.2981 18.1888 9.97887 18.1888L9.40652 18.1891C5.65581 18.1918 4.08395 18.1929 2.9222 17.028C1.71358 15.8251 1.73357 13.9949 1.76258 11.3388C1.76727 10.909 1.7722 10.4576 1.7722 9.9838C1.7722 9.58197 1.7686 9.18995 1.7651 8.80893C1.72852 4.8243 1.70299 2.04314 5.92053 1.82713L5.96836 1.82544C6.99223 1.78926 7.33526 1.77713 9.9672 1.77713L10.0047 1.80213C10.3852 1.80213 10.7587 1.79872 11.1237 1.79538L11.1237 1.79538C15.0186 1.75978 17.9476 1.733 18.1389 5.95713C18.1864 7.0113 18.1972 7.32797 18.1972 9.9963C18.1972 10.2362 18.1974 10.4679 18.1976 10.6917C18.201 14.309 18.2025 15.868 17.0355 17.0405ZM10.0031 4.86517C7.16725 4.86517 4.87142 7.16351 4.87142 9.99684C4.87142 12.8327 7.16975 15.1285 10.0031 15.1285C12.8389 15.1285 15.1348 12.8302 15.1348 9.99684C15.1348 7.16101 12.8364 4.86517 10.0031 4.86517ZM10.0031 13.3277C8.16225 13.3277 6.67225 11.8368 6.67225 9.99684C6.67225 8.15684 8.16309 6.66601 10.0031 6.66601C11.8431 6.66601 13.3339 8.15684 13.3339 9.99684C13.3348 11.8368 11.8439 13.3277 10.0031 13.3277ZM16.5373 4.66269C16.5373 5.32497 16.0004 5.86185 15.3381 5.86185C14.6758 5.86185 14.1389 5.32497 14.1389 4.66269C14.1389 4.00041 14.6758 3.46352 15.3381 3.46352C16.0004 3.46352 16.5373 4.00041 16.5373 4.66269Z"
+                fill="black" />
+            </svg></a>
+        </div>
+        <div>
+          <a href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 2.40167C0 1.07583 1.07583 0 2.40167 0C3.72667 0 4.8025 1.07583 4.80333 2.40167C4.80333 3.7275 3.7275 4.82583 2.40167 4.82583C1.07583 4.82583 0 3.7275 0 2.40167ZM19.9951 20V19.9992H20.0001V12.6642C20.0001 9.07582 19.2276 6.31165 15.0326 6.31165C13.0159 6.31165 11.6626 7.41831 11.1101 8.46748H11.0517V6.64665H7.07422V19.9992H11.2159V13.3875C11.2159 11.6467 11.5459 9.96332 13.7017 9.96332C15.8259 9.96332 15.8576 11.95 15.8576 13.4992V20H19.9951ZM0.329997 6.64746H4.47666V20H0.329997V6.64746Z"
+                fill="black" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+    var whyUsHeight = $(".whyUsFixed").height();
+
+    if ($(window).width() > 700) {
+      $(".whyUs-section-wrapper").height(whyUsHeight * 4);
+    } else {
+      $(".whyUs-section-wrapper").height(whyUsHeight);
+    }
+
+    $(".whyUsTrigger").height(whyUsHeight);
+
+    $(document).ready(function() {
+
+      //   $(".text-wrap-1, .text-wrap-2, .text-wrap-3").hover(HoverFun(this));
+      //   function HoverFun(index) {
+      //       //var arr = [".text-wrap-1", ".text-wrap-2", ".text-wrap-3"];
+      //       console.log(index);
+      //       $(`${index} .main-hover-text`).hover(
+      //         function () {
+      //           //on mouseEnter
+      //           $(".main-section-wrapper").addClass("hovered");
+      //           $(".bg-" + (i + 1)).css("opacity", 1);
+      //         },
+      //         function () {
+      //           //on mouseLeave
+      //           $(".main-section-wrapper").removeClass("hovered");
+      //           $(".bg-" + (i + 1)).css("opacity", 0);
+      //         }
+      //       );
+
+      //   }
+
+      $(".text-wrap-1 .main-hover-text").hover(
+        function () {
+          //on mouseEnter
+          $(".main-section-wrapper").addClass("hovered");
+          $(".bg-1").css("opacity", 0.5);
+        },
+        function () {
+          //on mouseLeave
+          $(".main-section-wrapper").removeClass("hovered");
+          $(".bg-1").css("opacity", 0);
+        }
+      );
+
+      $(".text-wrap-2 .main-hover-text").hover(
+        function () {
+          //on mouseEnter
+          $(".main-section-wrapper").addClass("hovered");
+          $(".bg-2").css("opacity", 0.5);
+        },
+        function () {
+          //on mouseLeave
+          $(".main-section-wrapper").removeClass("hovered");
+          $(".bg-2").css("opacity", 0);
+        }
+      );
+
+      $(".text-wrap-3 .main-hover-text").hover(
+        function () {
+          //on mouseEnter
+          $(".main-section-wrapper").addClass("hovered");
+          $(".bg-3").css("opacity", 0.5);
+        },
+        function () {
+          //on mouseLeave
+          $(".main-section-wrapper").removeClass("hovered");
+          $(".bg-3").css("opacity", 0);
+        }
+      );
+
+  });
+  </script>
+
+
+  <!-- SWIPER -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script src="js/nav.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/scroll-animation-home.js"></script>
+
+  <script src="js/svg-animations.js"></script>
+
+</body>
+
+</html>
