@@ -258,7 +258,7 @@ $nav-width: 46px;
   .main-socials {
     position: absolute;
     right: 60px;
-    top:  90vh;
+    top: 90vh;
     transform: translateY(-50%);
     display: flex;
     justify-content: center;
@@ -394,7 +394,7 @@ $nav-width: 46px;
     position: absolute;
     bottom: 16px;
     left: 12px;
-    div {
+    .circle-text {
       width: 100%;
       height: 100%;
       border: 1px solid $red;
@@ -409,6 +409,12 @@ $nav-width: 46px;
       overflow: hidden;
       transition: $transition-1;
       transform: perspective(1px) translateZ(0);
+      & div {
+        max-width: 60%;
+        text-align: center;
+        line-height: 16px;
+        font-weight: 600;
+      }
       &::before {
         content: "";
         border: 0px solid $red;
@@ -438,6 +444,16 @@ $nav-width: 46px;
       object-fit: cover;
       transition: $transition-1;
     }
+    .img-up {
+    transform: translateX(-100%);
+    transition: $transition-1;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+   }
   }
   .card-border {
     position: absolute;
@@ -452,12 +468,20 @@ $nav-width: 46px;
     transition: $transition-1;
   }
 }
-
+#green-up {
+  background-color: rgba(0, 126, 81, 0.5);
+}
+#red-up {
+  background-color: rgba(241, 0, 0, 0.3);
+}
+#purple-up {
+  background-color: rgba(49, 4, 98, 0.6);
+}
 //Card hover effects
 .card-wrapper:hover {
   color: $white;
   .circle {
-    div {
+    .circle-text {
       color: $white;
       &::before {
         border-width: 90px;
@@ -466,6 +490,9 @@ $nav-width: 46px;
   }
   .card-image {
     img {
+      transform: translateX(0);
+    }
+    .img-up {
       transform: translateX(0);
     }
   }
@@ -619,8 +646,8 @@ $nav-width: 46px;
     justify-content: center;
     align-items: center;
     .type-card {
-      width: 432px;
-      height: 365px;
+      width: 578px;
+      height: 489px;
       margin-right: 25px;
       border: 1px solid $black;
       overflow: hidden;
@@ -632,6 +659,7 @@ $nav-width: 46px;
       }
       a {
         position: absolute;
+        z-index: 2;
         top: 0;
         left: 0;
         width: 100%;
@@ -644,8 +672,20 @@ $nav-width: 46px;
         margin-top: 30%;
         color: $white;
       }
+      .types-link {
+        position: absolute;
+        bottom: 33px;
+        right: 55px;
+        color: $red;
+        font-size: 18px;
+        line-height: 27px;
+        text-decoration: underline;
+      }
     }
   }
+}
+#web-dev-anim .types-link {
+  color: $purple;
 }
 .types-animation {
   position: absolute;
@@ -663,8 +703,8 @@ $nav-width: 46px;
   z-index: -2;
   top: 0;
   left: 55px;
-  width: 438px;
-  height: 438px;
+  width: 586px;
+  height: 586px;
   background-color: $black;
   border-radius: 50%;
 }
@@ -777,44 +817,44 @@ $nav-width: 46px;
 }
 
 //marketing
-.marketing-anim {
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .marketing-top-block,
-  .marketing-bottom-block {
-    position: absolute;
-    width: 150%;
-    height: 55%;
-    background-color: $red;
-    opacity: 0.5;
-  }
-  .marketing-top-block {
-    transform: rotate(-23deg);
-    top: -32%;
-    left: -25%;
-  }
-  .marketing-bottom-block {
-    transform: rotate(-23deg);
-    bottom: -32%;
-    right: -25%;
-  }
-  .marketing-sun-block {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: $white;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-  }
-}
+// .marketing-anim {
+//   img {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
+//   .marketing-top-block,
+//   .marketing-bottom-block {
+//     position: absolute;
+//     width: 150%;
+//     height: 55%;
+//     background-color: $red;
+//     opacity: 0.5;
+//   }
+//   .marketing-top-block {
+//     transform: rotate(-23deg);
+//     top: -32%;
+//     left: -25%;
+//   }
+//   .marketing-bottom-block {
+//     transform: rotate(-23deg);
+//     bottom: -32%;
+//     right: -25%;
+//   }
+//   .marketing-sun-block {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     background-color: $white;
+//     width: 12px;
+//     height: 12px;
+//     border-radius: 50%;
+//   }
+// }
 
 //Why us section
 .whyUsTrigger {
@@ -845,8 +885,9 @@ $nav-width: 46px;
     padding-top: 172px;
     font-weight: 600;
     font-size: $large;
-    padding-bottom: 10px;
-    max-width: 60%;
+    line-height: 130px;
+    padding-bottom: 20px;
+    max-width: 65%;
     margin: 0 auto;
   }
   .why-description {
@@ -1060,7 +1101,6 @@ $nav-width: 46px;
 .expect-section-wrapper {
   background-color: $black;
   margin-top: 363px;
-  padding-bottom: 138px;
   color: $white;
   width: 100%;
   .green-banner-flex-wrap {
@@ -1126,7 +1166,10 @@ $nav-width: 46px;
   }
   .red-banner {
     color: $red;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
     .red-square {
       position: absolute;
       top: 50%;
@@ -1199,10 +1242,17 @@ $nav-width: 46px;
     }
   }
 }
-
-.pre-bg-contact {
-  width: 100%;
+.astr-red-banner-wrap {
+  position: relative;
   height: 832px;
+}
+.pre-bg-contact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: 50% 0%;
 }
@@ -1590,7 +1640,6 @@ footer {
       width: 100%;
       height: 250px;
       .small-ball-main {
-
         .small-ball-planet {
           width: 80%;
           left: 20%;
@@ -1686,7 +1735,7 @@ footer {
       padding: 0;
       margin-top: 0%;
     }
-    
+
     .cross-wrap {
       margin-top: 16px;
     }
@@ -1728,7 +1777,6 @@ footer {
 
   .expect-section-wrapper {
     margin-top: 355px;
-    padding-bottom: 18px;
     .green-banner-flex-wrap {
       justify-content: flex-start;
       align-items: start;
@@ -1758,6 +1806,7 @@ footer {
     }
 
     .red-banner {
+      position: relative;
       .red-square {
         top: 0;
         left: 0;
@@ -1780,7 +1829,13 @@ footer {
     }
   }
 
+
+  .astr-red-banner-wrap {
+    height: auto;
+    line-height: 0;
+  }
   .pre-bg-contact {
+    position: relative;
     height: 250px;
   }
 
@@ -1883,7 +1938,6 @@ footer {
       align-items: center;
       flex-direction: column-reverse;
       .copyright {
-        
         max-width: 95%;
         margin: auto;
         text-align: center;

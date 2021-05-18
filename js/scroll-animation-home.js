@@ -126,20 +126,20 @@ $(document).ready(function () {
   let RedBannerDiv = gsap.timeline({
     scrollTrigger: {
       trigger: ".red-banner",
-      start: "top bottom",
-      end: "top 50%",
+      start: "top 90%",
+      end: "top 40%",
       markers: false,
     },
   });
 
   RedBannerDiv.from(".red-square", {
-    width: "90%",
+    width: "80%",
   });
 
   //Astronaut background anim
   let AstrBack = gsap.timeline({
     scrollTrigger: {
-      trigger: "#astr-bg-anim",
+      trigger: ".pre-bg-contact",
       start: "top bottom",
       end: "bottom top",
       markers: false,
