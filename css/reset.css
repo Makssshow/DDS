@@ -112,12 +112,10 @@ menu,
 nav,
 section {
     display: block;
-    /* делаем элементы блочными (для старых браузеров) */
 }
 
 body {
     line-height: 1;
-    /* межстрочный интервал текста на странице */
 }
 
 ol,
@@ -130,15 +128,12 @@ blockquote:after,
 q:before,
 q:after {
     content: '';
-    /* Убираем кавычки у Q и BLOCKQUOTE */
     content: none;
-    /* добавляем для верности */
 }
 
 blockquote,
 q {
     quotes: none;
-    /* еще один способ убрать кавычки */
 }
 
 table {
